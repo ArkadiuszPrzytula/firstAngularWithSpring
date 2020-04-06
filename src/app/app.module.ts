@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { MeanuComponent } from './meanu/meanu.component';
 import { FooterComponent } from './footer/footer.component';
 import { ErrorComponent } from './error/error.component';
+import { ListToDosComponent } from './list-to-dos/list-to-dos.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ErrorComponent } from './error/error.component';
     LoginComponent,
     MeanuComponent,
     FooterComponent,
-    ErrorComponent
+    ErrorComponent,
+    ListToDosComponent
   ],
   imports: [
     BrowserModule,
