@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ErrorComponent } from './error/error.component';
 import { ListToDosComponent } from './list-to-dos/list-to-dos.component';
 import { MenuComponent } from './menu/menu.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MenuComponent } from './menu/menu.component';
     ErrorComponent,
     ListToDosComponent,
     MenuComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,
