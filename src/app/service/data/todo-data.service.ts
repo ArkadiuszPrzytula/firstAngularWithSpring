@@ -7,9 +7,13 @@ import { Todo } from 'src/app/list-to-dos/list-to-dos.component';
 })
 export class TodoDataService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   retriveAllToDos(username: string) {
-    return this.http.get<Todo []>(`http://localhost:8080/users/${username}/todos`)
+    return this.http.get<Todo[]>(`http://localhost:8080/users/${username}/todos`)
+  }
+
+  deleteTodo(username, id) {
+    return this.http.delete(`http://localhost:8080/users/${username}/todos/${id}`)
   }
 }
