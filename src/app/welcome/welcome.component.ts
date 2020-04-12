@@ -29,6 +29,15 @@ this.welcomeDataService.executeHelloWorldBeanService().subscribe(
   );
   }
 
+
+  getWelcomeMessageWithPatameter() {
+
+    this.welcomeDataService.executeHelloWorldBeanServiceWithPathVariable(this.name).subscribe(
+      value=>this.hendleSuccesfullRespone(value),
+      error=> this.hendleErrorResponse(error)
+      );
+      }
+
   hendleSuccesfullRespone(response) {
     this.welcomeMessageFromService = response.message
   }
