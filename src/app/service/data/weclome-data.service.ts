@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 export class HelloWorldBean {
-  constructor(public message: string){}
+  constructor(public message: string) { }
 }
 
 @Injectable({
@@ -15,14 +15,15 @@ export class WeclomeDataService {
 
 
   executeHelloWorldBeanService() {
-     return this.http.get<HelloWorldBean>('http://localhost:8080/api/welcome')
-  
+    return this.http.get<HelloWorldBean>('http://localhost:8080/api/welcome')
+
   }
 
-  executeHelloWorldBeanServiceWithPathVariable(name:string) {
-    return this.http.get<HelloWorldBean>(`http://localhost:8080/api/${name}`)
- 
- }
+  executeHelloWorldBeanServiceWithPathVariable(name: string) {
+    return this.http.get<HelloWorldBean>(`http://localhost:8080/api/welcome/${name}`)
+
+  }
+
 
 
 }
