@@ -8,7 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { LoginComponent } from './login/login.component';
-import { MeanuComponent } from './meanu/meanu.component';
 import { FooterComponent } from './footer/footer.component';
 import { ErrorComponent } from './error/error.component';
 import { ListToDosComponent } from './list-to-dos/list-to-dos.component';
@@ -23,7 +22,6 @@ import { HttpIntercepterBasicAuthService } from './service/http/http-intercepter
     AppComponent,
     WelcomeComponent,
     LoginComponent,
-    MeanuComponent,
     FooterComponent,
     ErrorComponent,
     ListToDosComponent,
